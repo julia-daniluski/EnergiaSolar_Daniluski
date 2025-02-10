@@ -1,80 +1,56 @@
-/* Reset e Global */
+/* Resetando margens e padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", serif;
 }
 
-/* Cores */
-:root {
-    --corPrimaria: #731702;
-    --corSecundaria: #D9B504;
-    --corTerciaria: #fff;
-    --primary: #F2D129;
-    --secondary: #1BCBF2;
-    --text-color: #fff;
-    --text-secondary: #000;
-    --text-tertiary: #5d5d5d;
-}
-
-
+/* Corpo */
 body {
-    background: url(img/fundo.jpg) no-repeat center fixed;
-    background-size: cover;
     display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Garante que a altura mínima seja de 100% da altura da tela */
-    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 /* Container principal */
 main {
-    position: relative;
     width: 100%;
-    min-height: 100vh;
-    padding: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-aside {
-    background-color: var(--corSecundaria);
-}
-
-/* Cabeçalho */
+/* Header */
 header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
+    background-color: #fff;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--corTerciaria);
+    position: relative;
 }
 
 header .logo {
-    position: relative;
-    max-width: 80px;
+    max-width: 100px;
 }
 
-header .logo:hover {
-    filter: invert(0.1);
+header .toggle {
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    cursor: pointer;
 }
 
-header ul {
+header ul li{
+    list-style: none;
+}
+
+header ul{
     position: relative;
     display: flex;
 }
 
-header ul li {
-    list-style: none;
-}
-
-header ul li a {
+header ul li a{
+    /* garante que o elemento seja renderizado em linha dentro do bloco */
     display: inline-block;
     color: var(--corSecundaria);
     font-size: 20px;
@@ -83,253 +59,129 @@ header ul li a {
     text-decoration: none;
     padding: 5px;
 }
-
-header ul li a:hover {
-    background-color: var(--corPrimaria);
-    color: var(--corTerciaria);
+/* hover dos links do cabeçalho */
+header ul li a:hover{
+    background-color: #731702
+    color: ;
     border-radius: 7px;
 }
 
+header .orcamento {
+    background-color: #731702;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+/* Responsividade - Menu Hamburguer */
+@media (max-width: 768px) {
+    header .links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #007bff;
+        width: 100%;
+        text-align: center;
+    }
+
+    header .toggle {
+        display: block;
+    }
+
+    header .links li {
+        margin: 15px 0;
+    }
+
+    header .links.show {
+        display: flex;
+    }
+}
+
+/* Conteúdo */
 .conteudo {
-    flex-grow: 1; /* Permite que o conteúdo ocupe o espaço disponível */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+    justify-content: space-between;
+    padding: 40px;
+    flex-wrap: wrap;
 }
 
-.conteudo .textoPrincipal {
-    position: relative;
-    max-width: 600px;
-    text-align: center; /* Centraliza o texto */
+.textoPrincipal h2 {
+    font-size: 2rem;
+    color: #007bff;
 }
 
-.conteudo .textoPrincipal h2 {
-    color: var(--corSecundaria);
-    font-size: 2.5em;
-    line-height: 1.5em;
-    font-weight: 500;
+.textoPrincipal p {
+    font-size: 1rem;
+    margin: 10px 0;
 }
 
-.conteudo .textoPrincipal h2 span {
-    color: var(--corPrimaria);
-    font-size: 1.2em;
-    font-weight: 900;
-}
-
-.conteudo .textoPrincipal p {
-    color: var(--corSecundaria);
-    text-align: center; /* Centraliza o parágrafo */
-}
-
-.conteudo .textoPrincipal a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 8px 20px;
-    background-color: var(--corPrimaria);
-    color: var(--corTerciaria);
+.textoPrincipal a {
     text-decoration: none;
-    border-radius: 40px;
-    font-weight: 500;
-    letter-spacing: 1px;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
-.conteudo .textoPrincipal a:hover {
-    background-color: var(--corSecundaria);
-    color: var(--corTerciaria);
-    border-radius: 40px;
-    text-decoration: none;
+.explicacao h3 {
+    font-size: 1.5rem;
+    color: #007bff;
 }
 
-/* Imagens */
-.conteudo .imgBox {
-    width: 600px;
+.paqueteis {
+    list-style: none;
     display: flex;
-    justify-content: center;
-    padding-right: 50px;
-    margin-top: 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.conteudo .imgBox img {
-    max-width: 340px;
-    transition: transform 0.3s ease; /* Transição para efeito ao rolar */
+.paqueteis li {
+    width: 30%;
+    margin: 10px 0;
 }
 
-.conteudo .imgBox img:hover {
-    transform: scale(1.05); /* Efeito de aumento da imagem ao passar o mouse */
+.paqueteis img {
+    max-width: 100%;
+    cursor: pointer;
 }
 
-/* Redes Sociais */
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
 .sociais {
-    position: absolute;
-    top: 50%;
-    right: 30px;
-    transform: translateY(-50%);
+    list-style: none;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .sociais li {
-    list-style: none;
+    margin: 0 10px;
 }
 
-.sociais li a {
-    display: inline-block;
-    margin: 5px 0;
-    transform: scale(0.6);
-    filter: invert(1);
+.sociais a img {
+    width: 40px;
 }
 
-.sociais li a:hover {
-    color: var(--corSecundaria);
-    filter: invert(0);
-}
-
-#whats {
-    height: 40px;
-}
-
-#x {
-    height: 40px;
-}
-/* Botão Orçamento */
-.orcamento {
-    display: inline-block;
-    background-color: #731702cb;
-    color: var(--corTerciaria);
-    font-size: 22px;
-    font-weight: 400;
-    margin-left: 40px;
-    text-decoration: none;
-    padding: 7px;
-    border-radius: 7px;
-}
-
-.explicacao{
-    color: var(--corSecundaria);
-    font-size: 2.5em;
-    line-height: 1.5em;
-    font-weight: 500;
-}
-
-footer {
-    background-color: #fff;
-    width: 100%;
-    padding: 20px 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    text-align: center;
-    position: relative; /* Garante que o footer seja empurrado para baixo */
-}
-
-footer p {
-    font-size: 20px;
-    text-align: center;
-}
-
-/* Responsividade */
-@media (max-width: 992px) {
-    header {
-        padding: 20px;
-    }
-
+/* Responsividade - Adaptando para telas menores */
+@media (max-width: 768px) {
     .conteudo {
         flex-direction: column;
-    }
-
-    .conteudo .imgBox {
-        max-width: 300px;
-    }
-
-    .sociais {
-        right: 20px;
-    }
-}
-
-@media (max-width: 450px) {
-    /* Event form */
-    #event-subscription {
-        flex-direction: column;
-        height: auto;
-    }
-    #disclaimer {
-        padding: 2em;
-    }
-    #disclaimer h2 {
-        margin-bottom: 0.5em;
-    }
-    #subscription-form {
-        max-width: 70%;
-        margin-bottom: 2em;
-    }
-
-    /* Benefits section */
-    .benefits {
-        flex-direction: column;
         align-items: center;
-        width: auto;
-        padding: 2em;
-    }
-    .benefit {
-        max-width: 100%;
-        margin-bottom: 2em;
     }
 
-    /* Event location */
-    #location {
-        flex-direction: column;
-        height: auto;
-        text-align: center;
-        padding: 2em;
-    }
-    #address {
-        order: 2;
-        flex-direction: column;
-        max-width: 100%;
-    }
-    #address i {
-        margin: 0.3em 0;
-    }
-    #about-location {
-        order: 1;
-        max-width: 100%;
-    }
-    #about-location h3 {
-        margin-bottom: 0;
-    }
-    #about-location p {
-        display: none;
+    .textoPrincipal h2 {
+        font-size: 1.5rem;
     }
 
-    /* Event details container */
-    .detail {
-        flex-direction: column;
-        margin-bottom: 0.5em;
-        gap: 0;
-    }
-    .detail img {
+    .paqueteis li {
         width: 100%;
-        margin: 2em 0;
-    }
-    #detail-1 img {
-        display: none;
-    }
-    .detail-description {
-        padding: 0;
-    }
-    #detail-3 img {
-        order: 2;
-    }
-    #detail-3 .detail-description {
-        order: 1;
-    }
-
-    /* Call to Action Section */
-    #cta .btn {
-        width: 80%;
+        margin-bottom: 20px;
     }
 }
