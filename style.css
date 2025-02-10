@@ -7,9 +7,8 @@
 
 /* Corpo */
 body {
-    display: flex;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #a9bf0482;
     color: #333;
 }
 
@@ -61,13 +60,14 @@ header ul li a{
 }
 /* hover dos links do cabeçalho */
 header ul li a:hover{
-    background-color: #731702
-    color: ;
+    background-color: #2C4001;
+    color: #fff;
     border-radius: 7px;
 }
 
 header .orcamento {
-    background-color: #731702;
+    background-color: #5A7302;
+    color: #fff;
     padding: 8px 16px;
     border-radius: 5px;
 }
@@ -80,7 +80,7 @@ header .orcamento {
         position: absolute;
         top: 60px;
         right: 0;
-        background-color: #007bff;
+        background-color: #5A7302;
         width: 100%;
         text-align: center;
     }
@@ -97,36 +97,41 @@ header .orcamento {
         display: flex;
     }
 }
-
+ul, li{
+    list-style-type: none 
+}
 /* Conteúdo */
 .conteudo {
     display: flex;
     justify-content: space-between;
     padding: 40px;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .textoPrincipal h2 {
-    font-size: 2rem;
-    color: #007bff;
+    font-size: 3em; 
+    margin-bottom: 1em; 
+    color: #5A7302;
 }
 
 .textoPrincipal p {
-    font-size: 1rem;
+    font-size: 2rem;
     margin: 10px 0;
 }
 
 .textoPrincipal a {
     text-decoration: none;
     color: #fff;
-    background-color: #007bff;
+    background-color: #5A7302;
     padding: 10px 20px;
     border-radius: 5px;
 }
 
 .explicacao h3 {
     font-size: 1.5rem;
-    color: #007bff;
+    color: #5A7302;
 }
 
 .paqueteis {
@@ -146,10 +151,45 @@ header .orcamento {
     cursor: pointer;
 }
 
+h3, h4{
+    color: #5A7302;
+    font-size: 3em; 
+    margin-bottom: 1em; 
+}
+
+img{
+    width: 50%; 
+    height: 50%; 
+    background-size: cover; 
+    align-items: center;
+    background-position: center; 
+    margin-bottom: 1em; 
+}
+
+p{
+    font-size: 1.5em; 
+    margin-bottom: 1em; 
+}
+
+.rede{
+    font-size: 1.5em; 
+    margin-bottom: 1em; 
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+button{
+    color: #fff;
+    background-color: #5A7302;
+    border-radius: 7px;
+    font-size: 2em; 
+    margin-bottom: 1em; 
+}
 /* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #ffffff;
+    color: #5A7302;
     text-align: center;
     padding: 20px;
 }
@@ -159,6 +199,7 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+
 }
 
 .sociais li {
