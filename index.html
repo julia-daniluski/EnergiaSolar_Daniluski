@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" /> 
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"> 
+    <title>Apolo Tech - Painel Solar</title>
+</head>
+<body>
+    <!-- tag semântica 'principal' -->
+    <main>
+         <!-- header -->
+         <header>
+            <!-- imagem logo -->
+             <a href="#"><img src="img/favicon.png" alt="logo da empresa" class="logo"></a>
+             <!-- div para menu hamburguer -->
+              <div class="toggle" onclick="toggleMenu();"></div>
+                <!-- links -->
+                <ul class="links">
+                    <li><a href="#" target="_blank">Inicio</a></li>
+                    <li><a href="#" target="_blank">Sobre nós</a></li>
+                    <li><a href="#" target="_blank">Serviços</a></li>
+                    <li><a href="#" target="_blank">Benefícios</a></li>
+                    <li><a href="#" target="_blank" class="orcamento">Orçamentos</a></li>
+                </ul>
+            </header>
+ <main>
+            <div class="conteudo">
+                <div class="textoPrincipal">
+                    <!-- título -->
+                     <h2><span>APOLO TECH</span><br>Iluminando o futuro com tecnologia verde!</h2>
+
+                     <!-- texto -->
+                      <p>Tecnologias que minimizam os impactos negativos das atividades humanas no meio ambiente e na sociedade.</p>
+
+                      <!-- botão -->
+                       <a href="#" target="_blank">Veja mais!</a>
+                </div>
+
+                <div class="explicacao">
+                    <h3>Energia limpa e renovável:</h3>
+                    <p>A Apolo Tech é uma empresa que não causa poluição pela emissão de substâncias tóxicas no meio ambiente, trabalhando com uma energia limpa e sustentável.</p>
+                </div>
+
+                 <!-- galeria de imagens -->
+                  <ul class="paineis">
+                    <li><img src="img/1.jpg" onclick="imgSlider('img/1.jpg');"></li>
+                    <h4>O que é um Painel Solar?</h4>
+                    <p>Um painel solar é um dispositivo que converte a luz solar em eletricidade por meio de células fotovoltaicas. As células fotovoltaicas são feitas de materiais que produzem elétrons excitados quando expostos à luz.</p>
+                    <li><img src="img/5.jpg" onclick="imgSlider('img/5.jpg');"></li>
+                    <h4>Quais os benefícios do painel solar?</h4>
+                    <p>A energia solar não polui, é renovável, limpa e silenciosa, pode ser usada em áreas isoladas da rede elétrica, necessidade mínima de manutenção, muito fácil de instalar e é barato para manter.</p>
+                    <li><img src="img/main.jpg" onclick="imgSlider('img/main.jpg');"></li>
+                    <h4>Painel Solar x Painel fotovoltaico</h4>
+                    <p>A principal diferença entre placa solar e painel fotovoltaico é que placas solares convertem a radiação solar em energia térmica. Já os painéis fotovoltaicos convertem a energia do Sol em energia elétrica, por meio do efeito fotoelétrico.</p>
+                  </ul>
+
+
+    </main> 
+    <aside><!-- lista redes sociais -->
+                  <ul class="sociais">
+                    <li><a href="#" target="_blank"><img src="img/whatsapp.png" alt="logo_whatssapp" id="whats"></a></li>
+                    <li><a href="#" target="_blank"><img src="img/x.jpg" alt="logo_x" id="x"></a></li>
+                  </ul>
+             </div></aside>
+    <footer><p>©2025 Apolo Tech - Contato: contato@deusdosol.com</p></footer>
+    <script src="mudar.js"></script>
+</body>
+</html>
