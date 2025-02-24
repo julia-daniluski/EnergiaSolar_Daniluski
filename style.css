@@ -72,6 +72,14 @@ header .orcamento {
     border-radius: 5px;
 }
 
+.foto {
+    height: 30%;
+    width: auto;
+    border: 2px solid #fff; 
+    border-radius: 10px;
+    translate: (-50%, -50%);
+}
+
 /* Responsividade - Menu Hamburguer */
 @media (max-width: 768px) {
     header .links {
