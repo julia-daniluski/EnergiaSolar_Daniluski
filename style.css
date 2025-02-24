@@ -1,23 +1,22 @@
-/* Resetando margens e padding */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #a9bf0482;
     color: #333;
 }
 
-/* Container principal */
+
 main {
     width: 100%;
 }
 
-/* Header */
 header {
     background-color: #fff;
     padding: 20px;
@@ -49,7 +48,7 @@ header ul{
 }
 
 header ul li a{
-    /* garante que o elemento seja renderizado em linha dentro do bloco */
+    
     display: inline-block;
     color: var(--corSecundaria);
     font-size: 20px;
@@ -72,6 +71,16 @@ header .orcamento {
     border-radius: 5px;
 }
 
+h4 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+p {
+    font-size: 14px; 
+}
+
+
 .foto {
     height: 30%;
     width: auto;
@@ -80,7 +89,20 @@ header .orcamento {
     translate: (-50%, -50%);
 }
 
-/* Responsividade - Menu Hamburguer */
+.fale{
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    background: #5b730268;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+    max-width: 300px; /* Limita a largura máxima das seções */
+    border: groove 2px #ffffff; /* Borda do aside */
+}
+
+
 @media (max-width: 768px) {
     header .links {
         display: none;
