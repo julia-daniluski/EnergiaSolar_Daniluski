@@ -9,12 +9,11 @@ Fiz uma logo e criei uma empresa:
 O site ficou simples:
 
 
-https://github.com/user-attachments/assets/0da779c9-e5f7-496d-a93d-ed7f2de0869f
+https://github.com/user-attachments/assets/85529a34-0367-4cb7-8937-79ace366bb79
 
 
 
 
 <br>
-https://github.com/user-attachments/assets/781c0db1-2994-4e52-838a-92ea57e733f6
 
-Figma a ser feito porque mudei a ordem...
+Figma:https://www.figma.com/design/AAqgBJGfiUl2rtVn8VqJQb/Untitled-(Copy)-(Copy)?node-id=2002-3&t=lmDjpYVdCxhajLxx-0
